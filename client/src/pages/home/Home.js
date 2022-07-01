@@ -137,7 +137,7 @@ export const Home = () => {
         </form>
       </section>
 
-      {peopleData && (
+      {peopleData && peopleData.persons?.length > 0 && (
         <section className=' max-w-sm mx-auto border border-sky-500 border-solid p-5 mb-10'>
           <Heading text='Add Car' />
           <form className='grid gap-3 mt-4' onSubmit={onAddCar}>
