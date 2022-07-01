@@ -256,7 +256,7 @@ const Mutation = new GraphQLObjectType({
           id: args.id,
         });
         if (!car) {
-          throw new Error(`Could not find car with id ${args.id}}`);
+          throw new Error(`Could not find car with id ${args.id}`);
         }
         car.year = args.year;
         car.make = args.make;
