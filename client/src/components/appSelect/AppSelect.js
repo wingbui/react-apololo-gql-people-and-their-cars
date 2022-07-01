@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const AppSelect = ({ label, handleChange, options, name }) => {
-  console.log(options)
   return (
     <div className='grid grid-cols-3'>
       <label className='self-center'>{label}</label>
